@@ -1,0 +1,221 @@
+<!-- Archivo: costos.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROBA – Costos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Estilos adicionales para tablas de costos y proyección */
+    .costos-table, .proyeccion-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    .costos-table th, .costos-table td,
+    .proyeccion-table th, .proyeccion-table td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: right;
+    }
+    .costos-table thead, .proyeccion-table thead {
+      background: var(--dark-teal);
+      color: #fff;
+    }
+    .costos-table tbody tr:nth-child(even), .proyeccion-table tbody tr:nth-child(even) {
+      background: var(--gray-light);
+    }
+    .costos-table th:first-child, .proyeccion-table th:first-child,
+    .costos-table td:first-child, .proyeccion-table td:first-child {
+      text-align: left;
+    }
+    .section h2 { margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo PROBA"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="empresa.html">Empresa</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="competencias.html">Competencias</a></li>
+          <li><a href="costos.html" class="active">Costos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container section">
+
+    <!-- Sección: Costos -->
+    <section id="costos">
+      <h2>Costos por Evaluación</h2>
+      <div class="table-responsive">
+        <table class="costos-table">
+          <thead>
+            <tr>
+              <th>Costos</th>
+              <th>Polígrafo</th>
+              <th>Ethics</th>
+              <th>Toxicológico</th>
+              <th>MIDOT</th>
+              <th>Socioeconómico</th>
+              <th>Teórica (App)</th>
+              <th>Pista</th>
+              <th>Simulador</th>
+              <th>Extintores</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Equipo / sistema</td><td>$150,000.00</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Depreciación equipo 5 años (mensual)</td><td>$2,500.00</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Depreciación por evaluación</td><td>$26.04</td><td>$600.00</td><td>$134.28</td><td>$640.00</td><td>$1,000.00</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Sueldo mensual</td><td>$22,100.00</td><td>$22,100.00</td><td>$22,100.00</td><td>$22,100.00</td><td>$22,100.00</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Sueldo por evaluación</td><td>$230.21</td><td>$56.67</td><td>$35.42</td><td>$38.37</td><td>$306.94</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Renta oficina</td><td>$7,000.00</td><td>$7,000.00</td><td>$7,000.00</td><td>$7,000.00</td><td>$7,000.00</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Renta por evaluación</td><td>$72.92</td><td>$17.95</td><td>$11.22</td><td>$12.15</td><td>$97.22</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Servicios (luz, internet)</td><td>$1,800.00</td><td>$1,800.00</td><td>$1,800.00</td><td>$1,800.00</td><td>$1,800.00</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Servicios por evaluación</td><td>$18.75</td><td>$4.62</td><td>$2.88</td><td>$3.13</td><td>$25.00</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Cant. evaluaciones diario</td><td>4</td><td>15</td><td>24</td><td>24</td><td>3</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Días semanales</td><td>5</td><td>6</td><td>6</td><td>5</td><td>5</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Días laborables mes</td><td>24</td><td>26</td><td>26</td><td>24</td><td>24</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Evaluaciones al mes</td><td>96</td><td>390</td><td>624</td><td>576</td><td>72</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+            <tr><td>Administración (12%)</td><td>$41.75</td><td>$81.51</td><td>$22.06</td><td>$83.24</td><td>$171.50</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td>Total costo por evaluación</td><td>$389.67</td><td>$704.07</td><td>$205.86</td><td>$776.88</td><td>$1,600.67</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- Sección: Modelo de negocio -->
+    <section id="modelo-negocio" class="section">
+      <h2>Modelo de negocio</h2>
+      <div class="modelo-grid">
+        <!-- Diagrama inline SVG -->
+        <div class="modelo-diagrama">
+          <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Nodos -->
+            <rect x="20" y="50" width="100" height="40" rx="20" fill="#1E90FF" />
+            <text x="70" y="75" fill="#fff" text-anchor="middle" alignment-baseline="middle" font-weight="bold">Afiliado</text>
+
+            <rect x="20" y="150" width="100" height="40" rx="20" fill="#228B22" />
+            <text x="70" y="175" fill="#fff" text-anchor="middle" alignment-baseline="middle" font-weight="bold">Empresa</text>
+
+            <rect x="20" y="250" width="100" height="40" rx="20" fill="#87CEFA" />
+            <text x="70" y="275" fill="#fff" text-anchor="middle" alignment-baseline="middle" font-weight="bold">Proveedor</text>
+
+            <!-- Servicios afiliado -->
+            <rect x="200" y="30" width="140" height="30" fill="#A9A9A9" />
+            <text x="270" y="50" fill="#fff" font-size="12" text-anchor="middle" alignment-baseline="middle">Evaluaciones</text>
+
+            <rect x="200" y="90" width="140" height="30" fill="#A9A9A9" />
+            <text x="270" y="110" fill="#fff" font-size="12" text-anchor="middle" alignment-baseline="middle">Capacitación</text>
+
+            <rect x="200" y="150" width="140" height="30" fill="#FFB6C1" />
+            <text x="270" y="170" fill="#000" font-size="12" text-anchor="middle" alignment-baseline="middle">Ofertas laborales</text>
+
+            <!-- Servicios empresa -->
+            <rect x="200" y="220" width="140" height="30" fill="#A9A9A9" />
+            <text x="270" y="240" fill="#fff" font-size="12" text-anchor="middle" alignment-baseline="middle">Plataforma</text>
+
+            <rect x="200" y="280" width="140" height="30" fill="#A9A9A9" />
+            <text x="270" y="300" fill="#fff" font-size="12" text-anchor="middle" alignment-baseline="middle">Publicidad</text>
+
+            <rect x="200" y="340" width="140" height="30" fill="#A9A9A9" />
+            <text x="270" y="360" fill="#fff" font-size="12" text-anchor="middle" alignment-baseline="middle">Vacantes</text>
+
+            <!-- Central PROBA logo container -->
+            <rect x="400" y="140" width="200" height="80" fill="none" stroke="#000" stroke-width="2"/>
+            <image href="images/logo.png" x="420" y="150" width="160" height="60" />
+
+            <!-- Líneas de conexión -->
+            <!-- Afiliado -> Evaluaciones (solid) -->
+            <line x1="120" y1="70" x2="200" y2="45" stroke="#000" stroke-width="2" />
+            <!-- Afiliado -> Capacitación (solid) -->
+            <line x1="120" y1="70" x2="200" y2="105" stroke="#000" stroke-width="2" />
+            <!-- Afiliado -> Ofertas (dashed) -->
+            <line x1="120" y1="70" x2="200" y2="165" stroke="#000" stroke-width="2" stroke-dasharray="5,5" />
+
+            <!-- Empresa -> Plataforma (solid) -->
+            <line x1="120" y1="170" x2="200" y2="235" stroke="#000" stroke-width="2" />
+            <!-- Empresa -> Publicidad (solid) -->
+            <line x1="120" y1="170" x2="200" y2="295" stroke="#000" stroke-width="2" />
+            <!-- Empresa -> Vacantes (solid) -->
+            <line x1="120" y1="170" x2="200" y2="355" stroke="#000" stroke-width="2" />
+
+            <!-- Proveedor -> Publicidad (solid) -->
+            <line x1="120" y1="270" x2="200" y2="315" stroke="#000" stroke-width="2" />
+
+            <!-- Conexiones servicios -> logo -->
+            <line x1="340" y1="45" x2="400" y2="180" stroke="#000" stroke-width="2" />
+            <line x1="340" y1="105" x2="400" y2="180" stroke="#000" stroke-width="2" />
+            <line x1="340" y1="165" x2="400" y2="180" stroke="#000" stroke-width="2" stroke-dasharray="5,5" />
+            <line x1="340" y1="235" x2="400" y2="180" stroke="#000" stroke-width="2" />
+            <line x1="340" y1="295" x2="400" y2="180" stroke="#000" stroke-width="2" />
+          </svg>
+        </div>
+        <!-- Leyenda -->
+        <div class="modelo-leyenda">
+          <p><strong>Líneas de cobro:</strong></p>
+          <ul>
+            <li><span class="linea linea-sola"></span> Cobro igual mensual o membresía anual.</li>
+            <li><span class="linea linea-doble"></span> Cobro por unidad.</li>
+            <li><span class="linea linea-punteada"></span> Sin cobro.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Proyección comercial por unidad -->
+    <section id="proyeccion-commercial" class="section">
+      <h2>Proyección comercial por unidad</h2>
+      <div class="table-responsive">
+        <table class="proyeccion-table">
+          <thead>
+            <tr>
+              <th>Servicio</th>
+              <th>Precio Proveedor</th>
+              <th>Cantidad</th>
+              <th>Precio PROBA</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Polígrafo pre-empleo</td><td>$3,000.00</td><td>100</td><td>$1,750.00</td><td>$175,000.00</td></tr>
+            <tr><td>Toxicológico</td><td>$136.00</td><td>100</td><td>$136.00</td><td>$13,600.00</td></tr>
+            <tr><td>MIDOT Integritest</td><td>$730.00</td><td>100</td><td>$730.00</td><td>$73,000.00</td></tr>
+            <tr><td>MIDOT stabilitest</td><td>$730.00</td><td>100</td><td>$730.00</td><td>$73,000.00</td></tr>
+            <tr><td>MIDOT Safetytest</td><td>$730.00</td><td>100</td><td>$730.00</td><td>$73,000.00</td></tr>
+            <tr><td>VSA (Ethics)</td><td>$592.00</td><td>100</td><td>$592.00</td><td>$59,200.00</td></tr>
+            <tr><td>Socioeconómico c/visita</td><td>$1,000.00</td><td>50</td><td>$1,000.00</td><td>$50,000.00</td></tr>
+            <tr><td>Capacitación manejo auto pista</td><td>$5,000.00</td><td>100</td><td>—</td><td>—</td></tr>
+            <tr><td>Capacitación manejo armas línea</td><td>$2,000.00</td><td>100</td><td>$250.00</td><td>$25,000.00</td></tr>
+            <tr><td>Capacitación manejo extintores línea</td><td>$400.00</td><td>100</td><td>$250.00</td><td>$25,000.00</td></tr>
+            <tr><td>Capacitación primeros auxilios y RCP</td><td>$1,800.00</td><td>100</td><td>$1,800.00</td><td>$180,000.00</td></tr>
+            <tr><td>Evaluación manejo armas stand</td><td>$500.00</td><td>100</td><td>$400.00</td><td>$40,000.00</td></tr>
+            <tr><td>Publicación vacantes</td><td>$749.00</td><td>100</td><td>$400.00</td><td>$40,000.00</td></tr>
+            <tr><td>Derechos uso plataforma</td><td>$3,000.00</td><td>100</td><td>$3,000.00</td><td>$300,000.00</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="4">Total Proyección</td><td>$1,366,800.00</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2025 PROBA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!-- Archivo: portafolio.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROBA – Portafolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ====== HEADER / NAV ====== -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Logo PROBA">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="empresa.html">Empresa</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="portafolio.html" class="active">Portafolio</a></li>
+          <li><a href="competencias.html">Competencias</a></li>
+          <li><a href="costos.html">Costos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== CONTENIDO PRINCIPAL ====== -->
+  <main class="container section">
+
+    <!-- ====== ¿Qué recibe el afiliado? ====== -->
+    <section id="recibe-afiliado">
+      <h2>¿Qué recibe el afiliado?</h2>
+      <div class="grid-2">
+        <!-- Lista completa de beneficios -->
+        <div>
+          <ul>
+            <li>Tarjeta de afiliación PROBA con su número PROBA (número de por vida).</li>
+            <li>Notificaciones de re-validación de evaluaciones (con descuentos negociados con proveedores de evaluaciones).</li>
+            <li>Invitaciones a cursos (con descuentos; hablamos con proveedores para gestionar tarifas reducidas).</li>
+            <li>Notificaciones de vacantes de las empresas asociadas de acuerdo al puesto y actividad deseada.</li>
+            <li>Promoción en vacantes de las empresas asociadas a través de nuestros canales.</li>
+            <li>Evita costos de volver a aplicar exámenes.</li>
+            <li>Exposición como persona PROBA por nuestra promoción corporativa de beneficios.</li>
+          </ul>
+        </div>
+        <!-- Tarjetas PROBA -->
+        <div class="grid-3">
+          <div>
+            <img src="images/azul.jpg" alt="Tarjeta PROBA Clásica">
+            <p><strong>Clásica:</strong> Control de confianza básico.</p>
+          </div>
+          <div>
+            <img src="images/dorado.jpg" alt="Tarjeta PROBA Oro">
+            <p><strong>Oro:</strong> Control de confianza y por lo menos una habilidad.</p>
+          </div>
+          <div>
+            <img src="images/plata.jpg" alt="Tarjeta PROBA Platino">
+            <p><strong>Platino:</strong> Control de confianza, habilidades y renovación consecutiva de 3 años.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr style="margin:3rem 0; border:none; height:1px; background:#e2e2e2;">
+
+    <!-- ====== PANEL PARA EL AFILIADO ====== -->
+    <section id="panel-afiliado">
+      <h2>PANEL PARA EL AFILIADO</h2>
+      <div class="grid-2">
+        <!-- Mockup móvil -->
+        <div>
+          <img src="images/cel.jpg" alt="Panel Afiliado en Móvil">
+        </div>
+        <!-- Descripción detallada con viñetas -->
+        <div>
+          <ul>
+            <li>Da acceso a la tabla de resultado general de los documentos y vigencia de los mismos. La pantalla de IDENTIDAD debe dar oportunidad a cada documento que el afiliado pueda subir el documento nuevo (verificar sistema de scanner desde celular).</li>
+            <li>Genera poder compartir: tabla de resultados, evaluación o documento exacto. Todo lo que se comparte debe pasar por el sistema para generar datos de contacto y estadístico por afiliado cuanto comparte y a quién.</li>
+            <li>Da oportunidad de ver el documento o evaluación. El sistema debe llevar estadístico.</li>
+            <li>Da oportunidad de comprar evaluación o actualización de documentos. El sistema debe llevar estadístico y poder cobrar y agendar evaluación.</li>
+            <li>Indica que ese módulo está completo y vigente.</li>
+            <li>Valida acceso a la plataforma, debe poder hacerlo por Face ID.</li>
+            <li>Contiene el número PROBA del afiliado, se puede compartir con cliente para dar acceso a la consulta específica.</li>
+            <li>Indica que ese módulo tiene pendientes, el sistema debe poder poner cuántos pendientes tiene y enviar al documento o evaluación vencida y dar oportunidad de comprar y agendar la evaluación así como ubicación y navegación a sitio de evaluación.</li>
+            <li>Efectúa tu prueba <em>Ethics</em>.</li>
+            <li>Esta prueba es por llamada telefónica, verifica que el afiliado no esté ebrio o bajo influjo de estupefacientes y libre de amenaza y puede cumplir instrucciones. El sistema debe poder hacer la llamada automáticamente e identificar el número PROBA para almacenar la prueba y enviar mensaje de resultado al cliente.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr style="margin:3rem 0; border:none; height:1px; background:#e2e2e2;">
+
+    <!-- ====== PANEL PARA LA EMPRESA ====== -->
+    <section id="panel-empresa1">
+      <h2>PANEL PARA LA EMPRESA</h2>
+      <div class="grid-2">
+        <!-- Texto descriptivo -->
+        <div>
+          <ul>
+            <li><strong>Ethics:</strong> Mandará notificación cuantos resultados están pendientes de revisar. El sistema arrojará: nombre, número PROBA y nombre de servicio si se le asignó y resultado. También deberá enviar notificación a teléfono celular del cliente.</li>
+            <li>Las vacantes deben abrir menús solo de los puestos que vayamos captando del mercado laboral; es decir, no puede la empresa subir cualquier vacante con calificaciones cualesquiera. Debemos integrar:
+              <ul>
+                <li>Puesto</li>
+                <li>Salario</li>
+                <li>Jornada</li>
+                <li>Lugar de labores</li>
+                <li>Prestaciones adicionales</li>
+                <li>Tipo de contratación</li>
+                <li>Requerimientos especiales del empleo</li>
+              </ul>
+            </li>
+            <li>El visor de cada módulo desplegará automáticamente solo lo que el afiliado tiene concluido con fecha de vencimiento.</li>
+            <li>La empresa podrá bajar o compartir la carátula de los módulos con el contenido de los resultados de cada evaluación (no podrá bajar la evaluación completa).</li>
+          </ul>
+        </div>
+        <!-- Mockup panel empresa -->
+        <div>
+          <img src="images/panel_empresa.jpg" alt="Panel para la Empresa">
+        </div>
+      </div>
+    </section>
+
+    <hr style="margin:3rem 0; border:none; height:1px; background:#e2e2e2;">
+
+    <!-- ====== ¿Qué recibe la empresa? ====== -->
+    <section id="recibe-empresa">
+      <h2>¿Qué recibe la empresa?</h2>
+      <div class="grid-2">
+        <!-- Lista completa de beneficios -->
+        <div>
+          <ul>
+            <li>Acceso al portal PROBA para consulta en línea del candidato (TODO ACTUALIZADO).</li>
+            <li>Publicación de vacantes.</li>
+            <li>Invitaciones a cursos corporativos de prevención de delito corporativo.</li>
+            <li>Notificaciones de los interesados en algún puesto (si se pueden generar citas mejor).</li>
+            <li>Notificaciones en casos de cambio de algún resultado de los afiliados y de actualización de evaluaciones de sus colaboradores.</li>
+            <li>Evita costos de volver a aplicar exámenes.</li>
+            <li>Reducción de costos y tiempo de selección de personal.</li>
+            <li>Exposición de sus vacantes a un grupo específico de personas.</li>
+            <li>Evita costos de aplicación de pruebas, custodia de evidencia y documental.</li>
+            <li>Consejos de seguridad corporativa.</li>
+          </ul>
+        </div>
+        <!-- Mockup panel empresa -->
+        <div>
+          <img src="images/panel.jpg" alt="Gráfico Competencia en el Mercado">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="container footer-content">
+      <p>© 2025 PROBA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
