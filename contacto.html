@@ -88,6 +88,7 @@
     <h2>Contacto</h2>
     <p>¡Estamos aquí para ayudarte! Completa el formulario y te responderemos lo antes posible.</p>
 
+    <form id="contacto-form">
     <form id="contacto-form" action="guardar_contacto.php" method="POST">
       <div>
         <label for="nombre">Nombre</label>
@@ -101,6 +102,7 @@
         <label for="mensaje">Mensaje</label>
         <textarea id="mensaje" name="mensaje" rows="6" placeholder="¿En qué podemos ayudarte?" required></textarea>
       </div>
+      <button type="submit" class="btn-submit">Enviar</button>
       <button type="button" class="btn-submit" id="open-consent">Enviar</button>
     </form>
 
