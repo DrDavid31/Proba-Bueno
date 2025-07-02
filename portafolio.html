@@ -1,4 +1,3 @@
-<!-- Archivo: portafolio.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -51,6 +50,7 @@
         </div>
         <!-- Tarjetas PROBA -->
         <div class="grid-3">
+        <div id="tarjetas-proba" class="grid-3">
           <div>
             <img src="images/azul.jpg" alt="Tarjeta PROBA Clásica">
             <p><strong>Clásica:</strong> Control de confianza básico.</p>
@@ -76,41 +76,7 @@
         <!-- Mockup móvil -->
         <div>
           <img src="images/cel.jpg" alt="Panel Afiliado en Móvil">
-        </div>
-        <!-- Descripción detallada con viñetas -->
-        <div>
-          <ul>
-            <li>Da acceso a la tabla de resultado general de los documentos y vigencia de los mismos. La pantalla de IDENTIDAD debe dar oportunidad a cada documento que el afiliado pueda subir el documento nuevo (verificar sistema de scanner desde celular).</li>
-            <li>Genera poder compartir: tabla de resultados, evaluación o documento exacto. Todo lo que se comparte debe pasar por el sistema para generar datos de contacto y estadístico por afiliado cuanto comparte y a quién.</li>
-            <li>Da oportunidad de ver el documento o evaluación. El sistema debe llevar estadístico.</li>
-            <li>Da oportunidad de comprar evaluación o actualización de documentos. El sistema debe llevar estadístico y poder cobrar y agendar evaluación.</li>
-            <li>Indica que ese módulo está completo y vigente.</li>
-            <li>Valida acceso a la plataforma, debe poder hacerlo por Face ID.</li>
-            <li>Contiene el número PROBA del afiliado, se puede compartir con cliente para dar acceso a la consulta específica.</li>
-            <li>Indica que ese módulo tiene pendientes, el sistema debe poder poner cuántos pendientes tiene y enviar al documento o evaluación vencida y dar oportunidad de comprar y agendar la evaluación así como ubicación y navegación a sitio de evaluación.</li>
-            <li>Efectúa tu prueba <em>Ethics</em>.</li>
-            <li>Esta prueba es por llamada telefónica, verifica que el afiliado no esté ebrio o bajo influjo de estupefacientes y libre de amenaza y puede cumplir instrucciones. El sistema debe poder hacer la llamada automáticamente e identificar el número PROBA para almacenar la prueba y enviar mensaje de resultado al cliente.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <hr style="margin:3rem 0; border:none; height:1px; background:#e2e2e2;">
-
-    <!-- ====== PANEL PARA LA EMPRESA ====== -->
-    <section id="panel-empresa1">
-      <h2>PANEL PARA LA EMPRESA</h2>
-      <div class="grid-2">
-        <!-- Texto descriptivo -->
-        <div>
-          <ul>
-            <li><strong>Ethics:</strong> Mandará notificación cuantos resultados están pendientes de revisar. El sistema arrojará: nombre, número PROBA y nombre de servicio si se le asignó y resultado. También deberá enviar notificación a teléfono celular del cliente.</li>
-            <li>Las vacantes deben abrir menús solo de los puestos que vayamos captando del mercado laboral; es decir, no puede la empresa subir cualquier vacante con calificaciones cualesquiera. Debemos integrar:
-              <ul>
-                <li>Puesto</li>
-                <li>Salario</li>
-                <li>Jornada</li>
-                <li>Lugar de labores</li>
+@@ -113,56 +114,68 @@
                 <li>Prestaciones adicionales</li>
                 <li>Tipo de contratación</li>
                 <li>Requerimientos especiales del empleo</li>
@@ -137,6 +103,7 @@
         <div>
           <ul>
             <li>Acceso al portal PROBA para consulta en línea del candidato (TODO ACTUALIZADO).</li>
+            <li>Acceso al portal PROBA para consulta en línea del candidato</li>
             <li>Publicación de vacantes.</li>
             <li>Invitaciones a cursos corporativos de prevención de delito corporativo.</li>
             <li>Notificaciones de los interesados en algún puesto (si se pueden generar citas mejor).</li>
@@ -161,8 +128,20 @@
   <footer>
     <div class="container footer-content">
       <p>© 2025 PROBA. Todos los derechos reservados.</p>
+      <p><a href="terminos.html" class="terms-link">Términos y Condiciones</a></p>
     </div>
   </footer>
+  <!-- Botón flotante de WhatsApp -->
+  <div id="whatsapp-overlay" class="whatsapp-overlay hidden">
+    <p>Chatea con nosotros por WhatsApp</p>
+    <div class="buttons">
+      <button type="button" class="btn-secondary" id="whatsapp-open">Abrir chat</button>
+      <button type="button" class="btn-secondary" id="whatsapp-close">Cerrar</button>
+    </div>
+  </div>
+  <button id="whatsapp-btn" class="whatsapp-btn" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 0c-8.8 0-16 7.2-16 16 0 2.9 0.8 5.7 2.3 8.2l-2.3 8.4 8.6-2.2c2.4 1.3 5.1 2 7.8 2 8.8 0 16-7.2 16-16s-7.2-16-16-16zm0 29.3c-2.2 0-4.4-0.6-6.3-1.7l-0.4-0.2-5.1 1.3 1.4-4.9-0.3-0.5c-1.4-2.2-2.2-4.7-2.2-7.3 0-7.5 6.1-13.6 13.6-13.6s13.6 6.1 13.6 13.6c0 7.5-6.1 13.6-13.6 13.6zm7.6-9.4c-0.3-0.1-1.9-0.9-2.2-1-0.3-0.1-0.5-0.2-0.7 0.2-0.2 0.3-0.8 1-1 1.2-0.2 0.2-0.4 0.3-0.7 0.1-0.3-0.1-1.3-0.5-2.4-1.5-0.9-0.8-1.5-1.8-1.7-2.1-0.2-0.3 0-0.5 0.1-0.6 0.1-0.1 0.3-0.3 0.4-0.4 0.1-0.1 0.1-0.2 0.2-0.3 0.1-0.1 0.1-0.2 0.2-0.3s0.1-0.2 0-0.3c0-0.1-0.7-1.7-1-2.4-0.3-0.7-0.6-0.6-0.8-0.6-0.3 0-0.5 0-0.7 0-0.2 0-0.3 0-0.5 0.3s-0.6 0.6-0.6 1.5 0.6 1.8 0.7 1.9c0.1 0.1 1.1 1.6 2.7 2.8 1.2 0.9 2.1 1.2 2.4 1.3s0.5 0.1 0.7-0.1c0.2-0.2 0.8-0.9 1.1-1.2s0.5-0.3 0.8-0.2c0.3 0.1 1.9 0.9 2.2 1 0.3 0.1 0.5 0.2 0.5 0.3 0.1 0.2 0.1 1.2-0.2 1.6z"/></svg>
+  </button>
 
   <script src="js/script.js"></script>
 </body>
