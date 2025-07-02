@@ -1,4 +1,3 @@
-<!-- Archivo: servicios.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -50,85 +49,7 @@
 
       <!-- Tendencias Conductuales -->
       <div>
-        <h3>Tendencias Conductuales</h3>
-        <ul>
-          <li><strong>MIDOT</strong></li>
-          <li><strong>AMITAI</strong></li>
-          <li>Psicométrico</li>
-          <li><strong>Polígrafo (resultado analizado)</strong></li>
-        </ul>
-      </div>
-
-      <!-- Habilidades -->
-      <div>
-        <h3>Habilidades</h3>
-        <ul>
-          <li>Manejo de autos, simulador</li>
-          <li>Manejo seguro de autos, AS3</li>
-          <li>Manejo OFFICE / Office</li>
-          <li>Seguridad Industrial, MIDOT</li>
-          <li>Manejo de armas de fuego, SGS</li>
-          <li>Primeros auxilios y RCP, Rio de la Loza, AHA</li>
-          <li>Manejo de extintores, ITSI</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Fila inferior: Antecedentes y Confirmación + tabla -->
-    <div class="grid-2" style="margin-top:2rem;">
-      <!-- Antecedentes -->
-      <div>
-        <h3>Antecedentes</h3>
-        <ul>
-          <li>Antecedentes judiciales (federal y del último estado donde vive)</li>
-          <li>Laborales (últimos 2 empleos)</li>
-          <li>Penales (federales y locales)</li>
-          <li>Examen médico básico</li>
-          <li>Examen toxicológico (7 parámetros)</li>
-        </ul>
-      </div>
-
-      <!-- Confirmación -->
-      <div>
-        <h3>Confirmación</h3>
-        <ul>
-          <li>Polígrafo</li>
-          <li>Ethics</li>
-        </ul>
-
-        <!-- Tabla Objetivo de Análisis -->
-        <div class="table-responsive" style="margin-top:1rem;">
-          <table class="proyeccion-table">
-            <thead>
-              <tr>
-                <th>Evaluación</th>
-                <th>Objetivo de Análisis</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Polígrafo (pre-empleo)</td>
-                <td>Validación de información proporcionada, verificación de conductas, relaciones y hechos ya realizados.</td>
-              </tr>
-              <tr>
-                <td>Socioeconómico</td>
-                <td>Verificación de domicilio y residencia, integración e interrelación familiar, valores y principios como objetivo para trabajo.</td>
-              </tr>
-              <tr>
-                <td>Toxicológico</td>
-                <td>Adicción a sustancias prohibidas que pudieran afectar a la empresa y clima laboral.</td>
-              </tr>
-              <tr>
-                <td>MIDOT</td>
-                <td>Identificar tendencias conductuales e integridad: honradez, honestidad, apego y cumplimiento a normas que no pongan en riesgo a sus usuarios en el trabajo y colaboradores.</td>
-              </tr>
-              <tr>
-                <td>Antecedentes Jurídicos</td>
-                <td>Verificación de sentencias judiciales que impacten en la economía o libertad del evaluado que puedan ser factor de riesgo para la empresa.</td>
-              </tr>
-              <tr>
-                <td>Antecedentes Laborales</td>
-                <td>Verificación de motivo de salida de último empleo y sus referencias, identificar si pertenece a algún sindicato o competencia.</td>
+@@ -131,31 +132,43 @@
               </tr>
             </tbody>
           </table>
@@ -154,8 +75,20 @@
   <footer>
     <div class="container footer-content">
       <p>© 2025 PROBA. Todos los derechos reservados.</p>
+      <p><a href="terminos.html" class="terms-link">Términos y Condiciones</a></p>
     </div>
   </footer>
+  <!-- Botón flotante de WhatsApp -->
+  <div id="whatsapp-overlay" class="whatsapp-overlay hidden">
+    <p>Chatea con nosotros por WhatsApp</p>
+    <div class="buttons">
+      <button type="button" class="btn-secondary" id="whatsapp-open">Abrir chat</button>
+      <button type="button" class="btn-secondary" id="whatsapp-close">Cerrar</button>
+    </div>
+  </div>
+  <button id="whatsapp-btn" class="whatsapp-btn" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 0c-8.8 0-16 7.2-16 16 0 2.9 0.8 5.7 2.3 8.2l-2.3 8.4 8.6-2.2c2.4 1.3 5.1 2 7.8 2 8.8 0 16-7.2 16-16s-7.2-16-16-16zm0 29.3c-2.2 0-4.4-0.6-6.3-1.7l-0.4-0.2-5.1 1.3 1.4-4.9-0.3-0.5c-1.4-2.2-2.2-4.7-2.2-7.3 0-7.5 6.1-13.6 13.6-13.6s13.6 6.1 13.6 13.6c0 7.5-6.1 13.6-13.6 13.6zm7.6-9.4c-0.3-0.1-1.9-0.9-2.2-1-0.3-0.1-0.5-0.2-0.7 0.2-0.2 0.3-0.8 1-1 1.2-0.2 0.2-0.4 0.3-0.7 0.1-0.3-0.1-1.3-0.5-2.4-1.5-0.9-0.8-1.5-1.8-1.7-2.1-0.2-0.3 0-0.5 0.1-0.6 0.1-0.1 0.3-0.3 0.4-0.4 0.1-0.1 0.1-0.2 0.2-0.3 0.1-0.1 0.1-0.2 0.2-0.3s0.1-0.2 0-0.3c0-0.1-0.7-1.7-1-2.4-0.3-0.7-0.6-0.6-0.8-0.6-0.3 0-0.5 0-0.7 0-0.2 0-0.3 0-0.5 0.3s-0.6 0.6-0.6 1.5 0.6 1.8 0.7 1.9c0.1 0.1 1.1 1.6 2.7 2.8 1.2 0.9 2.1 1.2 2.4 1.3s0.5 0.1 0.7-0.1c0.2-0.2 0.8-0.9 1.1-1.2s0.5-0.3 0.8-0.2c0.3 0.1 1.9 0.9 2.2 1 0.3 0.1 0.5 0.2 0.5 0.3 0.1 0.2 0.1 1.2-0.2 1.6z"/></svg>
+  </button>
 
   <script src="js/script.js"></script>
 </body>
