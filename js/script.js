@@ -1,5 +1,3 @@
-// Archivo: js/script.js
-
 document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
 
@@ -43,5 +41,36 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // 4. Botón flotante de WhatsApp
+  const wBtn = document.getElementById("whatsapp-btn");
+  if (wBtn) {
+    wBtn.addEventListener("click", () => {
+      window.open(
+        "https://api.whatsapp.com/send/?phone=525518448622&text=Me+pueden+brindar+informaci%C3%B3n+de+sus+servicios&type=phone_number&app_absent=0",
+        "_blank"
+      );
+    });
+  }
+
+  // 5. Formulario de contacto con confirmación
+  const consentBtn = document.getElementById("open-consent");
+  const consentOverlay = document.getElementById("aviso-overlay");
+  const cancelSend = document.getElementById("cancelar-envio");
+  const confirmSend = document.getElementById("confirmar-envio");
+  const consentCheck = document.getElementById("aceptar-datos");
+  const contactForm = document.getElementById("contacto-form");
+  if (consentBtn && consentOverlay) {
+    consentBtn.addEventListener("click", () => consentOverlay.classList.remove("hidden"));
+    cancelSend?.addEventListener("click", () => consentOverlay.classList.add("hidden"));
+    consentCheck?.addEventListener("change", () => {
+      if (confirmSend) confirmSend.disabled = !consentCheck.checked;
+    });
+    confirmSend?.addEventListener("click", () => {
+      consentOverlay.classList.add("hidden");
+      alert("Datos enviados correctamente. (La base de datos no esta configurada)");
+      contactForm?.reset();
+    });
+  }
 });
 
